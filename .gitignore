@@ -1,0 +1,11 @@
+venv/
+backend/venv/
+frontend/node_modules/
+
+__pycache__/
+*.pyc
+*.log
+.DS_Store
+
+rag chatbot/.env
+rag chatbot/.streamlit/
