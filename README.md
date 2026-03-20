@@ -1,86 +1,120 @@
-# Enigma_24 Hack
+TradeLens – AI Stock Analysis & Prediction Platform
+## 🎬 Demo
 
-# AI-Based Stock Trading for Indian Markets
+[Watch Full Demo](https://drive.google.com/file/d/11vbTqBBvI1F_uTR0rO6t2s8tqVDlInqf/view?usp=sharing)
+Overview
 
-## Project Overview
-This project leverages AI and advanced analytical techniques to enhance stock trading strategies for Indian stocks listed on NSE and BSE. It combines sentiment analysis, price prediction, technical indicators, and chatbot recommendations to enable informed intraday and swing trading decisions.
+TradeLens is an AI-powered stock analysis platform designed for Indian markets (NSE/BSE). It combines machine learning, sentiment analysis, and technical indicators to provide data-driven insights, price predictions, and actionable trading recommendations.
 
-[![Prototype Video](https://github.com/ShamanthHiremath/Enigma_24/blob/main/link%20files/prototypeVideo.gif)](https://github.com/ShamanthHiremath/Enigma_24/blob/main/link%20files/prototypeVideo.mp4)
+The system is built as a full-stack application with a Flask backend, React frontend, and integrated ML models.
+⸻
 
-## Features
+Key Features
 
-### Sentiment Analysis
-- **News Sentiment Analysis**: Analyzes real-time news to derive sentiment scores for stocks listed in NSE and BSE.
-- **Global and Indian Market Trends**: Performs sentiment analysis on global and domestic market trends to assess market behavior.
+AI Price Prediction
+	•	LSTM-based models for forecasting stock prices
+	•	Supports multiple stocks (NSE & international tickers)
+	•	Scaler + model pipeline for real-time predictions
 
-### Price Prediction
-- **LSTM Forecasting**: Utilizes LSTM models for accurate price predictions, aiding traders in making data-driven decisions.
+Risk & Trend Analysis
+	•	Random Forest-based risk evaluation
+	•	Identifies market trends and volatility levels
+	•	Helps users understand potential downside risk
 
-### Trend and Risk Assessment
-- **RFA (Random Forest Algorithm)**: Evaluates market trends and assesses risk levels, enabling strategic decision-making.
+Sentiment Analysis
+	•	Analyzes financial news and market signals
+	•	Provides sentiment-driven insights
+	•	Combines global + Indian market context
 
-### Buy/Sell Recommendations
-- **Technical Indicators**: Generates buy/sell tickers for both intraday and swing trading strategies using advanced technical indicators.
+Buy/Sell Recommendations
+	•	Uses technical indicators like:
+RSI, MACD, EMA, Bollinger Bands
+	•	Generates actionable intraday & swing signals
 
-### Recommendation Justification
-- **RAG-Based Chatbot**: Implements a Retrieval-Augmented Generation chatbot to provide recommendation justifications and trading summaries, ensuring transparency and confidence in decisions.
+AI Chatbot (RAG-based)
+	•	Retrieval-Augmented Generation chatbot
+	•	Explains predictions and recommendations
+	•	Provides transparent reasoning for decisions
 
-## Installation
-1. **Clone the Repository**:
-   ```bash
-   git clone https://github.com/ShamanthHiremath/Enigma_24.git
-   ```
-2. **Navigate to the Project Directory**:
-   ```bash
-   cd 
-   ```
-3. **Install Dependencies**:
-   ```bash
-   pip install -r requirements.txt
-   ```
-4. **Set Up API Keys**:
-   - Obtain API keys for necessary services (e.g., news sentiment analysis, stock data).
-   - Add them to the `.env` file in the project directory.
+⸻
 
-## Usage
-1. **Run the Application**:
-   ```bash
-   python main.py
-   ```
-2. **Interact with the Chatbot**:
-   Use the chatbot interface for real-time recommendations and justifications.
-3. **View Buy/Sell Recommendations**:
-   Access generated tickers and sentiment scores from the dashboard.
+Tech Stack
 
-## Technologies Used
-- **Machine Learning**: Random Forest, LSTM
-- **Natural Language Processing**: Sentiment Analysis
-- **Technical Indicators**: RSI, MACD, Bollinger Bands, EMA, etc.
-- **Chatbot Framework**: Retrieval-Augmented Generation (RAG)
+Backend
+	•	Python, Flask
+	•	Scikit-learn, TensorFlow/Keras
+	•	FAISS
 
-## Future Enhancements
-- **Integration with Trading Platforms**: Automate trades based on AI-generated recommendations.
-- **Multi-Market Support**: Expand coverage to global markets.
-- **Enhanced Sentiment Sources**: Incorporate social media analysis.
+Frontend
+	•	React.js
+	•	Tailwind CSS
 
-## Contributing
-Contributions are welcome! Please follow these steps:
-1. Fork the repository.
-2. Create a feature branch (`git checkout -b feature-name`).
-3. Commit your changes (`git commit -m 'Add feature-name'`).
-4. Push to the branch (`git push origin feature-name`).
-5. Create a pull request.
+Data & APIs
+	•	Finnhub API
+	•	NSE/BSE data pipelines
 
-## License
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+⸻
 
-## Contact
-For queries or feedback, please reach out:
-- **Email**: your-email@example.com
-- **LinkedIn**: [Shamanth M Hiremath](https://linkedin.com/in/shamanthmhiremath)
-- **GitHub**: [Shamanth Hiremath](https://github.com/ShamanthHiremath)
+Project Structure
 
----
+backend/
+├── app.py
+├── routes/
+├── models/
+├── Ai_models/
+├── utils/
 
+frontend/
+├── src/
+├── public/
 
-**Happy Trading!** 📈
+rag chatbot/
+├── chatbot.py
+
+⸻
+
+Installation & Setup
+	1.	Clone Repository
+git clone https://github.com/advaithnk/tradelens-stock-predictor.git
+cd tradelens-stock-predictor
+	2.	Install Backend Dependencies
+cd backend
+pip install -r requirements.txt
+	3.	Setup Environment Variables
+Create a .env file:
+FINNHUB_API_KEY=your_key_here
+	4.	Run Backend
+python app.py
+	5.	Run Frontend
+cd ../frontend
+npm install
+npm start
+
+⸻
+
+What This Project Demonstrates
+	•	End-to-end ML system integration
+	•	Real-time API + data pipeline handling
+	•	Full-stack development (React + Flask)
+	•	Applied financial analytics and prediction models
+
+⸻
+
+Future Improvements
+	•	Live deployment with optimized lightweight models
+	•	Real-time trading integration
+	•	Enhanced model accuracy
+	•	Portfolio optimization features
+
+⸻
+
+Author
+
+Advaith NK
+GitHub: https://github.com/advaithnk
+
+⸻
+
+License
+
+This project is for educational and demonstration purposes.
